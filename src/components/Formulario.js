@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, } from 'react';
 import Error from './Error';
 
-const Formulario = () => {
+const Formulario = ({guardarBusqueda}) => {
     const [termino, guardarTermino] = useState('');
     const [error, guardarError] = useState(false);
 
@@ -14,12 +14,12 @@ const Formulario = () => {
         }
         guardarError(false);
         //enviar el termino de busqueda hacia el componente principal
-
+        guardarBusqueda(termino);
     }
     return ( 
         <form onSubmit={buscarImagenes}>
-            <div className="row">
-                <div className="form-group col-md-8">
+            <div className="row justify-content-center">
+                <div className="col-lg">
                 <input className="form-control form-control-lg" 
                        type="text" 
                        placeholder="Buscador de imagenes, ejemplo: cafe o personas" 
