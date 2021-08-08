@@ -22,7 +22,7 @@ const Formulario = ({guardarBusqueda}) => {
                 <div className="col-lg">
                 <input className="form-control form-control-lg" 
                        type="text" 
-                       placeholder="Buscador de imagenes, ejemplo: cafe o personas" 
+                       placeholder="Buscador de imagenes, ejemplo: cafe o autos" 
                        aria-label=".form-control-lg example"
                        onChange={e => guardarTermino(e.target.value)}
                        />

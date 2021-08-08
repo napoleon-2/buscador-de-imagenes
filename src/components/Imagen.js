@@ -8,7 +8,7 @@ const Imagen = ({imagen}) => {
     return ( 
         <div className="col-6 col-md-4 card-group">
             <div className="card " >
-                <img src={previewURL} alt={tags} className="card-img-top" />
+                <img src={previewURL} alt={tags} className="card-img-top " width = "300px" height = "300px" />
             
                 <div className="card-body">
                     <p className="card-text">{likes} Me Gusta</p>
